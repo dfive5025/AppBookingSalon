@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/salon_1057369"
+        android:label="Salon Beauty"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/salon_1057369"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Appontmentactivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+            />
+        <activity
+            android:name=".Workscheduleactivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+            />
+        <activity
+            android:name=".WorkscheduleaOfeachStaffctivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+            />
+        <activity
+            android:name=".Staff_order_activity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".Successmonitoractivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".Timeorderactivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".BookActivityUser"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".UpdatePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity
+            android:name=".Userdashboardactivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+        <activity android:name=".BillDetailActivity1"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar"/>
+        <activity android:name=".notificationNewOrderActivity"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar"/>
+        <activity
+            android:name=".Loginactivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registeractivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+    </application>
+
+</manifest>

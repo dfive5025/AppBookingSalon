@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="210dp"
+    android:id="@+id/line"
+    android:orientation="horizontal">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="20dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="&#8942"-->
+    <LinearLayout
+android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_margin="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:id="@+id/sphoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/womenbarber"
+
+                android:layout_gravity="center">
+
+            </ImageView>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:id="@+id/nameid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type la"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white_greyish" />
+
+            </LinearLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="userorderview"
+            type="com.example.myapplication.viewModel.UseroderViewModel" />
+
+    </data>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#FEACD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="List Of Salon"
+            android:fontFamily="@font/lora_semibold"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listsalon"
+android:background="#f3f6f4"
+
+    />
+
+
+
+
+
+</LinearLayout>
+    </layout>

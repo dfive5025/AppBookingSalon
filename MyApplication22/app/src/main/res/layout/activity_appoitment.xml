@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+   >
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.myapplication.viewModel.AppointmentViewModel" />
+
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey_2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:onClick="@{()->viewmodel.onBackpress()}"
+            android:id="@+id/btnbackService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:text="List Orders"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:text="Recent Orders"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/recommend"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_insert_chart_24"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchbill"
+                    android:background="@drawable/rounded"
+                    app:queryBackground="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <include layout="@layout/layout_notfound"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:src="@drawable/icon_notfound"-->
+<!--                android:id="@+id/notfound"-->
+<!--                android:visibility="gone"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/noservice"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:text="No Recent Orders Available"-->
+<!--                android:textColor="@color/background_color"-->
+<!--                android:textSize="20dp"-->
+<!--                android:visibility="gone" />-->
+<!--        </LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/req_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_2"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <!--        </ScrollView>-->
+
+    </LinearLayout>
+</LinearLayout>
+</layout>
