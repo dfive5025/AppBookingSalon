@@ -17,8 +17,8 @@ From the customer's perspective:
 ![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/045835b7-3dae-472f-9d40-696a30187740)
 ![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/dd58221c-0a32-4262-8537-21f03aef8021)
 ![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/5592f109-926d-4b9f-a540-56fcc02381e4)
-![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/28c35a83-ad16-4c54-91d4-b4173c2185fa)
 ![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/092afedc-8461-4db4-93bc-361970f28ed9)
+![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/28c35a83-ad16-4c54-91d4-b4173c2185fa)
 ![image](https://github.com/dfive5025/AppBookingSalon/assets/96346527/b8e13e6e-1083-401d-acf6-3d60c4ecdfbc)
 
 
